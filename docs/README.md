@@ -10,7 +10,7 @@ Application web e-commerce avec backend PHP et frontend Vue.js.
 - **Base de données**: MySQL
 - **Gestion des dépendances**: Composer (backend), npm (frontend)
 
-## Fonctionnalités
+## ✨ Fonctionnalités
 - 🛍️ Gestion des produits et catégories
 - 🔐 Système d'authentification
 - 🛒 Panier d'achat
