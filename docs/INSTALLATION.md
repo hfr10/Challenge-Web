@@ -6,3 +6,8 @@
 - Composer
 - Node.js 16 ou supérieur
 - npm ou yarn
+
+## Installation du backend
+1. Cloner le projet
+2. Se placer dans le dossier backend
+3. Installer les dépendances avec Composer
