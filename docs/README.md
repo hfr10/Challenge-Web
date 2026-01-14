@@ -11,8 +11,8 @@ Application web e-commerce avec backend PHP et frontend Vue.js.
 - **Gestion des dépendances**: Composer (backend), npm (frontend)
 
 ## Fonctionnalités
-- Gestion des produits et catégories
-- Système d'authentification
-- Panier d'achat
-- Gestion des commandes
-- Interface d'administration
+- 🛍️ Gestion des produits et catégories
+- 🔐 Système d'authentification
+- 🛒 Panier d'achat
+- 📦 Gestion des commandes
+- ⚙️ Interface d'administration
