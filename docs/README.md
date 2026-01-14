@@ -4,7 +4,7 @@ Site E-Commerce
 ## 📝 Description
 Application web e-commerce avec backend PHP et frontend Vue.js.
 
-## Technologies
+## ⚙️ Technologies
 - **Backend**: PHP avec architecture MVC personnalisée
 - **Frontend**: Vue.js 3 avec Vite
 - **Base de données**: MySQL
