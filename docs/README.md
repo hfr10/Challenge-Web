@@ -16,3 +16,6 @@ Application web e-commerce avec backend PHP et frontend Vue.js.
 - 🛒 Panier d'achat
 - 📦 Gestion des commandes
 - ⚙️ Interface d'administration
+
+## 🚀 Installation
+Consultez le [guide d'installation](INSTALLATION.md) pour plus de détails.
