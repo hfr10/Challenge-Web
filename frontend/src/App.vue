@@ -1,6 +1,4 @@
-<script setup>
-// rien pour le moment
-</script>
+<script setup></script>
 
 <template>
   <div class="min-h-screen flex items-center justify-center bg-slate-100">
