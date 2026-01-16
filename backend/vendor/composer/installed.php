@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'groupe6/ecommerce-backend',
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
-        'reference' => '8abc1f94689db7a788fd6acf14841d6231ccf397',
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
+        'reference' => 'c9bbdcc20b839d78808fd56a83cdb5c83e1b92db',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'groupe6/ecommerce-backend' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '8abc1f94689db7a788fd6acf14841d6231ccf397',
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
+            'reference' => 'c9bbdcc20b839d78808fd56a83cdb5c83e1b92db',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
