@@ -6,6 +6,14 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Core\\Database' => $baseDir . '/src/Core/Database.php',
+    'App\\Core\\Response' => $baseDir . '/src/Core/Response.php',
+    'App\\Core\\Router' => $baseDir . '/src/Core/Router.php',
+    'App\\Models\\Product' => $baseDir . '/src/Models/Product.php',
+    'App\\Models\\User' => $baseDir . '/src/Models/User.php',
+    'App\\Repositories\\ProductRepository' => $baseDir . '/src/Repositories/ProductRepository.php',
+    'App\\Repositories\\UserRepository' => $baseDir . '/src/Repositories/UserRepository.php',
+    'App\\Services\\AuthService' => $baseDir . '/src/Services/AuthService.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Dotenv\\Dotenv' => $vendorDir . '/vlucas/phpdotenv/src/Dotenv.php',
