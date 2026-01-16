@@ -327,4 +327,4 @@ Pour toute question ou problème:
 
 ---
 
-Développé avec ❤️ par Groupe 6
+Développé par le Groupe 6
