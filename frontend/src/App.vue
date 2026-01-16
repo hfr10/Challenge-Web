@@ -1,10 +1,24 @@
-<script setup></script>
+<script setup>
+import { onMounted } from 'vue'
+import { RouterView } from 'vue-router'
+import Navbar from '@/components/Navbar.vue'
+import { useAuthStore } from '@/stores/auth'
+import { useCartStore } from '@/stores/cart'
+
+const authStore = useAuthStore()
+const cartStore = useCartStore()
+
+onMounted(() => {
+  // Initialize auth and cart from localStorage
+  authStore.initAuth()
+  cartStore.initCart()
+})
+</script>
 
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-slate-100">
-    <h1 class="text-4xl font-bold text-indigo-600">
-      Tailwind v4 fonctionne 🎉
-    </h1>
+  <div class="min-h-screen bg-gray-50">
+    <Navbar />
+    <RouterView />
   </div>
 </template>
 

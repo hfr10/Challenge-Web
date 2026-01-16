@@ -1,16 +1,31 @@
 <?php
 
-use App\Controllers\ProductController;
-use App\Controllers\AuthController;
-use App\Controllers\OrderController;
+namespace App\Core;
 
-return [
-    ['GET', '/products', [ProductController::class, 'index']],
-    ['GET', '/products/{id}', [ProductController::class, 'show']],
+class Router
+{
+    private array $routes = [];
 
-    ['POST', '/register', [AuthController::class, 'register']],
-    ['POST', '/login', [AuthController::class, 'login']],
+    public function get(string $path, callable $handler): void
+    {
+        $this->routes['GET'][$path] = $handler;
+    }
 
-    ['POST', '/orders', [OrderController::class, 'store']],
-    ['GET', '/orders/me', [OrderController::class, 'myOrders']],
-];
+    public function dispatch(string $method, string $uri): void
+    {
+        $uri = parse_url($uri, PHP_URL_PATH);
+
+        foreach ($this->routes[$method] ?? [] as $route => $handler) {
+            $pattern = "#^" . preg_replace('#\{id\}#', '(\d+)', $route) . "$#";
+
+            if (preg_match($pattern, $uri, $matches)) {
+                array_shift($matches);
+                call_user_func_array($handler, $matches);
+                return;
+            }
+        }
+
+        http_response_code(404);
+        echo json_encode(['error' => 'Route not found']);
+    }
+}

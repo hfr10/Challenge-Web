@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Services;
 
 use App\Repositories\UserRepository;
@@ -13,14 +12,15 @@ class AuthService
         $this->repo = new UserRepository();
     }
 
-    public function register(string $email, string $password): void
+    public function register(array $data): void
     {
-        $this->repo->create($email, $password);
+        $this->repo->create($data['email'], $data['password'], $data['first_name'] ?? null, $data['last_name'] ?? null);
     }
 
-    public function login(string $email, string $password): bool
+    public function login(array $data): ?array
     {
-        $user = $this->repo->findByEmail($email);
-        return $user && password_verify($password, $user['password']);
+        $user = $this->repo->findByEmail($data['email']);
+        if (!$user || !password_verify($data['password'], $user['password_hash'])) return null;
+        return $user;
     }
 }
