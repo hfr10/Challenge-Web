@@ -1,6 +1,7 @@
 # Challenge-Web
 Site E-Commerce
-## Description
+
+## 📝 Description
 Application web e-commerce avec backend PHP et frontend Vue.js.
 
 ## Technologies
